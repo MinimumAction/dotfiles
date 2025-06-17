@@ -1,0 +1,35 @@
+{
+    "buttons": [
+      {
+        "label": "Lock",
+        "action": "hyprlock",
+        "icon": "system-lock-screen"
+      },
+      {
+        "label": "Logout",
+        "action": "hyprctl dispatch exit",
+        "icon": "system-log-out"
+      },
+      {
+        "label": "Reboot",
+        "action": "systemctl reboot",
+        "icon": "system-reboot"
+      },
+      {
+        "label": "Power Off",
+        "action": "systemctl poweroff",
+        "icon": "system-shutdown"
+      },
+      {
+        "label": "Suspend",
+        "action": "systemctl suspend",
+        "icon": "system-suspend"
+      },
+      {
+        "label": "Hibernate",
+        "action": "systemctl hibernate",
+        "icon": "system-suspend-hibernate"
+      }
+    ]
+  }
+  
