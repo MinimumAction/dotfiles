@@ -20,8 +20,9 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(setq inhibit-startup-screen t)
-(global-display-line-numbers-mode t)
+(setq inhibit-startup-screen t
+      visible-bell t)
+(global-display-line-numbers-mode 1)
 
 ;;-------------------------------------------------
 ;; Org Mode
@@ -75,10 +76,12 @@
 ;;-------------------------------------------------
 ;; Theme
 ;;-------------------------------------------------
-(use-package darkplum-theme
+(use-package doom-themes
   :ensure t
   :config
-  (load-theme 'darkplum t))
+  (load-theme 'doom-dracula t)
+  (doom-themes-org-config)
+  (doom-themes-visual-bell-config))
 
 ;;-------------------------------------------------
 ;; Evil Mode Core
@@ -121,4 +124,3 @@
   :config
   (require 'evil-org-agenda)
   (evil-org-agenda-set-keys))
-
