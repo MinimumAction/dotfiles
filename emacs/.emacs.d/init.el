@@ -74,7 +74,7 @@
   :commands vterm)
 
 ;;-------------------------------------------------
-;; Theme
+;; Theme and transparency
 ;;-------------------------------------------------
 (use-package doom-themes
   :ensure t
